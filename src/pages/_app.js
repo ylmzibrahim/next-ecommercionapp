@@ -5,12 +5,12 @@ import { Provider, observer } from 'mobx-react';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Provider user={stores.user}>
+    // <Provider user={stores.user}>
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </Provider>
+    // </Provider>
   );
 }
 
-export default observer(MyApp);
+export default MyApp;

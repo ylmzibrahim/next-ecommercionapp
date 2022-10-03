@@ -4,12 +4,32 @@
 
 html,
 body {
-  @apply m-0 p-0;
+  @apply m-0 p-0 font-josefinsans-400;
+}
+
+@font-face {
+  font-family: "JosefinSans-Light";
+  src: url("../fonts/JosefinSans/JosefinSans-Light.ttf");
 }
 
 @font-face {
   font-family: "JosefinSans-Regular";
   src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "JosefinSans-Medium";
+  src: url("../fonts/JosefinSans/JosefinSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "JosefinSans-SemiBold";
+  src: url("../fonts/JosefinSans/JosefinSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "JosefinSans-Bold";
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf");
 }
 
 @font-face {
