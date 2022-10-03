@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply m-0 p-0;
+}
+
+@font-face {
+  font-family: "JosefinSans-Regular";
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
