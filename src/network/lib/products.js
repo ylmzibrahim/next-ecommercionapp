@@ -8,16 +8,16 @@ export function getASingleProduct(id) {
   return axiosClient.get(`/products/${id}`);
 }
 
-export function getLimitResults(query = "") {
+export function getLimitResults(query = '') {
   return axiosClient.get(`/products${query}`);
 }
 
-export function getSortResults(query = "") {
+export function getSortResults(query = '') {
   return axiosClient.get(`/products${query}`);
 }
 
 export function getAllCategories() {
-  return axiosClient.get(`/products/categories`);
+  return axiosClient.get('/products/categories');
 }
 
 export function getInCategory(category) {

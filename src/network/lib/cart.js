@@ -8,15 +8,15 @@ export function getASingleCart(id) {
   return axiosClient.get(`/carts/${id}`);
 }
 
-export function getLimitResults(query = "") {
+export function getLimitResults(query = '') {
   return axiosClient.get(`/carts${query}`);
 }
 
-export function getSortResults(query = "") {
+export function getSortResults(query = '') {
   return axiosClient.get(`/carts${query}`);
 }
 
-export function getInDataRange(query = "") {
+export function getInDataRange(query = '') {
   return axiosClient.get(`/carts${query}`);
 }
 

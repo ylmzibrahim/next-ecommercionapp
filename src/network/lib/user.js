@@ -8,11 +8,11 @@ export function getASingleUser(id) {
   return axiosClient.get(`/users/${id}`);
 }
 
-export function getLimitResults(query = "") {
+export function getLimitResults(query = '') {
   return axiosClient.get(`/users${query}`);
 }
 
-export function getSortResults(query = "") {
+export function getSortResults(query = '') {
   return axiosClient.get(`/users${query}`);
 }
 

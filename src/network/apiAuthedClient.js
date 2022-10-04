@@ -1,18 +1,17 @@
 import axios from 'axios';
 
-function getCookie(name) {
+const getCookie = (name) => {
   if (typeof window === 'undefined') return null;
-  else {
-    let matches = document.cookie.match(
+  if (typeof window !== 'undefined') {
+    const matches = document.cookie.match(
       new RegExp(
-        '(?:^|; )' +
-          name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') +
-          '=([^;]*)'
-      )
+        `(?:^|; )${name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1')}=([^;]*)`,
+      ),
     );
     return matches ? decodeURIComponent(matches[1]) : undefined;
   }
-}
+  return null;
+};
 
 const axiosAuthedClient = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_URL,
@@ -28,10 +27,10 @@ axiosAuthedClient.interceptors.response.use(
     return response;
   },
   function (error) {
-    let res = error.response;
-    console.error('Looks like there was a problem. Status Code: ' + res.status);
+    const res = error.response;
+    console.error(`Looks like there was a problem. Status Code: ${res.status}`);
     return Promise.reject(error);
-  }
+  },
 );
 
 export default axiosAuthedClient;

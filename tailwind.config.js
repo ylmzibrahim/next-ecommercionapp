@@ -20,7 +20,7 @@ module.exports = {
         'footer-section': '#EEEFFB',
         'copyright-bar': '#E7E4F8',
         'sub-text': '#8A8FB9',
-        "copyright-text": "#9DA0AE",
+        'copyright-text': '#9DA0AE',
       },
     },
     fontFamily: {
