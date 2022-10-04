@@ -11,11 +11,17 @@ module.exports = {
         blue: '#2F1AC4', // Section Hover
         'off-blue': '#151875', // Text
         'off-navy-blue': '#3F509E',
-        'sky-blue': '#F6F5FF', // Sub Text
+        'sky-blue': '#F6F6FD',
+        'sky-blue-bottom': '#F1F0FF',
+        'sky-blue-top': '#F3F9FF',
         purple: '#7E33E0', // Violet
         'pantone-purple': '#E0D3F5', // Ugsadug
         'off-purple': '#9F63B5',
-      }
+        'footer-section': '#EEEFFB',
+        'copyright-bar': '#E7E4F8',
+        'sub-text': '#8A8FB9',
+        "copyright-text": "#9DA0AE",
+      },
     },
     fontFamily: {
       'josefinsans-300': ['JosefinSans-Light', 'cursive'],
